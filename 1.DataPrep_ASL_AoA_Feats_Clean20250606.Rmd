@@ -53,7 +53,7 @@ concs_raw <- read_csv("data/MBCDI_concs_2022-07-14.csv")  %>%
   subset(Concept %in% prod_aoa_df$Concept)
 
 ##Load English frequency information
-childes.freqStats <- read_csv("data/MBCDI_CHILDESv0.1.0_freq.csv")  %>%
+childes.freqStats <- read_csv("data/CDIwords_featurecounts.csv")  %>%
   subset(Concept %in% prod_aoa_df$Concept)
 
 #Load ASL frequency information 
