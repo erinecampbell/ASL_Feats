@@ -1,0 +1,88 @@
+---
+title: 'Data wrangling ASL Feats Project'
+last edited: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document:
+    toc: yes
+  pdf_document:
+    toc: yes
+---
+
+## Setup  
+```{r Setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE)
+
+library(tidyverse)
+
+```
+  
+### Load Datasets  
+```{r Load Datasets, message=FALSE}
+
+##Load ASL AOA information
+ASL_aoa_df<-read_csv("../RawData/signdata_20231106_updated.csv")%>%
+  select("LemmaID", "SignBankLemmaID", "bglm_aoa", "empirical_aoa") %>%
+  dplyr::rename(Sign = "SignBankLemmaID")
+
+#Loading English AOA 
+WS_aoa_df <- read_csv("../RawData/WS_production_aoa_data.csv") %>%
+  dplyr::select(LemmaID, words_FeatsVersion, category,lexical_category,aoa, DF_aoa) 
+  
+
+#matching concepts between English & ASL CDIs
+prod_aoa_df<-dplyr::inner_join(ASL_aoa_df, WS_aoa_df, by="LemmaID")%>% plyr::rename(c("bglm_aoa"="bglm_aoa_ASL", "empirical_aoa"="empirical_aoa_ASL", "words_FeatsVersion"="Concept"))
+
+#fixes negative aoa for mommy and daddy in English CDI resulting from modeling method
+#by replacing negative aoas with lowest positive AoA value 
+prod_aoa_df[prod_aoa_df$Concept %in% c("mommy","daddy"),"aoa"] <- 
+  prod_aoa_df[prod_aoa_df$Concept %in% c("mommy","daddy"),"aoa"] +
+  min(prod_aoa_df[!prod_aoa_df$Concept %in% c("mommy","daddy"),"aoa"])
+
+## Load/prep concFeats file
+concsFeats <- read_csv("../RawData/MBCDI_concsFeats_2022-07-14.csv") %>%
+  subset(Concept %in% prod_aoa_df$Concept)
+
+# adding broad BR labels to concsFeats
+perceptualBR <- c("smell", "sound", "tactile", "taste", "visual-colour", "visual-form_and_surface", "visual-motion")
+concsFeats$BR_Label_broad <- sapply(concsFeats$BR_Label, function (x) ifelse(x %in% perceptualBR, "perceptual", x))
+
+
+## Load/prep concs file
+concs1 <- read_csv("../RawData/MBCDI_concs_2022-07-14.csv")  %>%
+  subset(Concept %in% prod_aoa_df$Concept)
+
+##Load English frequency information
+childes.freqStats <- read_csv("../RawData/MBCDI_CHILDESv0.1.0_freq.csv")  %>%
+  subset(Concept %in% prod_aoa_df$Concept)
+
+#Load ASL frequency information 
+
+ASL.freqStats <- read_csv("../RawData/signdata_20231106_updated.csv")%>%
+  subset(InCDI=="Yes") %>%
+  subset(SignBankLemmaID %in% prod_aoa_df$Sign) %>%
+  select("SignBankLemmaID", "SignFrequency(Z)") %>%
+  dplyr::rename(Sign = "SignBankLemmaID")
+
+
+concs <- left_join(concs1, prod_aoa_df, by="Concept") %>%
+  left_join(childes.freqStats, by="Concept") %>%
+  filter(!is.na(bglm_aoa_ASL)) %>%
+  #left_join(CD_stats, by="Concept") %>%
+  filter(!is.na(Sign)) %>%
+  left_join(ASL.freqStats, by="Sign")
+
+
+#rm(perceptualBR,  childes.freqStats)
+```
+  
+
+### Saving Data for Analysis  
+```{r}
+
+concs<-select(concs,-4:-25,-48)
+gdata::keep(columnClasses, concs, sure=TRUE)
+save.image(file="../Output/ASLLexFeats.Rdata") 
+```
+  
+

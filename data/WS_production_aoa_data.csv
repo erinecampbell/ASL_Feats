@@ -1,0 +1,377 @@
+Questions,LemmaID,words,category,lexical_category,aoa,DF_aoa,Kuperman_aoa,words_FeatsVersion,words_FANversion,words_DaleFensonVersion,words_KupermanVersion,Freq_pm,Feats_check,FAN_check,DF_check
+?? Action sign only??,,swing (object),outside,nouns,21.34157603,20,4.16,swing,swing,swing (item),swing,25.98,TRUE,TRUE,TRUE
+?? Glue_2??,glue_1 ,glue,toys,nouns,28.36269629,30,4.67,glue,glue,glue,glue,5.88,TRUE,TRUE,TRUE
+?? Multiple scarft signs??,scarf,scarf,clothing,nouns,30.62593623,NA,5.68,scarf,scarf,scarf,scarf,4.69,TRUE,TRUE,TRUE
+?? Multiple toy signs!,toy_1,toy (object),toys,nouns,20.9739828,19,3,toy,toy,toy,toy,16.84,TRUE,TRUE,TRUE
+?? Truck_2?,truck_1,truck,vehicles,nouns,18.55693661,18,3.79,truck,truck,truck,truck,72.86,TRUE,TRUE,TRUE
+??chain??,,pretzel,food_drink,nouns,25.38590491,28,5,pretzel,pretzel,pretzel,pretzel,2,TRUE,FALSE,TRUE
+??peas_2?,peas_1,peas,food_drink,nouns,24.08658726,23,3.95,peas,peas,peas,pea,3.9,TRUE,TRUE,TRUE
+??pizza_2??,pizza_1,pizza,food_drink,nouns,21.02696606,22,4.67,pizza,pizza,pizza,pizza,33.51,TRUE,TRUE,TRUE
+??sled_2??,sled_1,sled,vehicles,nouns,29.32699719,NA,4.89,sled,sled,sled,sled,2.92,TRUE,FALSE,TRUE
+,airplane,airplane,vehicles,nouns,19.73514473,19,3.94,airplane,airplane,airplane,airplane,10.92,TRUE,TRUE,TRUE
+,animal,animal,animals,nouns,23.80777221,23,2.89,animal,animal,animal,animal,45.49,TRUE,TRUE,TRUE
+,apple,apple,food_drink,nouns,17.78681925,17,4.15,apple,apple,apple,apple,23.67,TRUE,TRUE,TRUE
+,aunt,arm,body_parts,nouns,21.42179351,21,3.26,arm,arm,arm,arm,65.41,TRUE,TRUE,TRUE
+,baby,baby,people,other,15.2594829,16,3.84,baby,baby,baby,baby,509.37,TRUE,TRUE,TRUE
+,ball,ball,toys,nouns,11.59084126,16,2.9,ball,ball,ball,ball,104.96,TRUE,TRUE,TRUE
+,balloon,balloon,toys,nouns,16.83756478,16,4.37,balloon,balloon,balloon,balloon,8.67,TRUE,TRUE,TRUE
+,banana,banana,food_drink,nouns,15.69715301,17,3.78,banana,banana,banana,banana,10.73,TRUE,TRUE,TRUE
+,basement,basement,furniture_rooms,nouns,32.56975691,NA,6.74,basement,basement,basement,basement,21.06,TRUE,TRUE,TRUE
+,basket_1,basket,household,nouns,24.78659751,25,5.67,basket,basket,basket,basket,13.18,TRUE,TRUE,TRUE
+,bat_1,bat,toys,nouns,25.29444107,25,4.85,bat_(baseball),bat,bat,bat,20.63,TRUE,TRUE,TRUE
+,bath,beads,clothing,nouns,28.72795041,NA,5.63,beads,bead,beads,bead,1.12,TRUE,TRUE,TRUE
+,bathroom,bathroom,furniture_rooms,nouns,23.01979016,22,3,bathroom,bathroom,bathroom,bathroom,61.67,TRUE,TRUE,TRUE
+,beach,beach,places,other,26.17495682,23,4.8,beach,beach,beach,beach,56.63,TRUE,TRUE,TRUE
+,beans,beans,food_drink,nouns,24.03866366,23,3.42,beans,beans,beans,bean,6.84,TRUE,TRUE,TRUE
+,beans,green beans,food_drink,nouns,26.90884095,30,NA,green_beans,green beans,green beans,green beans,NA,TRUE,FALSE,TRUE
+,bear,bear,animals,nouns,18.58684075,19,3.58,bear,bear,bear,bear,57.41,TRUE,TRUE,TRUE
+,bed,bed,furniture_rooms,nouns,20.23767326,20,2.89,bed,bed,bed,bed,187.12,TRUE,TRUE,TRUE
+,bedroom,bedroom,furniture_rooms,nouns,24.7122869,25,3.9,bedroom,bedroom,bedroom,bedroom,36.71,TRUE,TRUE,TRUE
+,bee,bee,animals,nouns,20.59624895,20,5,bee,bee,bee,bee,10.35,TRUE,TRUE,TRUE
+,belt,belt,clothing,nouns,25.45861645,23,4.62,belt,belt,belt,belt,24.35,TRUE,TRUE,TRUE
+,bib,bib,clothing,nouns,23.11847347,21,4.53,bib,bib,bib,bib,0.49,TRUE,FALSE,TRUE
+,bicycle,bicycle,vehicles,nouns,21.18699052,19,4.26,bike,bicycle,bicycle,bicycle,6.61,TRUE,TRUE,TRUE
+,bird,bird,animals,nouns,16.51159259,16,3.52,bird,bird,bird,bird,45.45,TRUE,TRUE,TRUE
+,blanket,blanket,household,nouns,20.02455527,19,3.61,blanket,blanket,blanket,blanket,12.98,TRUE,TRUE,TRUE
+,boat,boat,vehicles,nouns,20.18756804,18,3.84,boat,boat,boat,boat,95.78,TRUE,TRUE,TRUE
+,book,book,toys,nouns,15.42817463,16,3.68,book,book,book,book,176.98,TRUE,TRUE,TRUE
+,boots,boots,clothing,nouns,22.06202107,22,4.86,boots,boots,boots,boots,19.16,TRUE,TRUE,TRUE
+,bottle,bottle,household,nouns,18.2451135,16,3.56,bottle,bottle,bottle,bottle,50.75,TRUE,TRUE,TRUE
+,bowl,bowl,household,nouns,22.11911531,21,4.26,bowl,bowl,bowl,bowl,21.45,TRUE,TRUE,TRUE
+,box,box,household,nouns,21.74187804,22,4.3,box,box,box,box,89.75,TRUE,TRUE,TRUE
+,boy,boy,people,other,22.73642148,20,3.67,boy,boy,boy,boy,529.82,TRUE,TRUE,TRUE
+,bread,bread,food_drink,nouns,21.17000405,21,3.58,bread,bread,bread,bread,28.33,TRUE,TRUE,TRUE
+,brother,brother,people,other,26.65701942,28,3.63,brother,brother,brother,brother,283.94,TRUE,TRUE,TRUE
+,brush,brush,household,nouns,21.44336272,22,3.78,brush,brush,brush,brush,14.16,TRUE,TRUE,TRUE
+,bubbles,bubbles,toys,nouns,17.75470999,18,3.79,bubble,bubble,bubbles,bubble,8,TRUE,TRUE,TRUE
+,bug,bug,animals,nouns,20.95382291,19,3.79,bug,bug,bug,bug,20.94,TRUE,TRUE,TRUE
+,bus,bus,vehicles,nouns,20.44328624,21,3.85,bus,bus,bus,bus,74.18,TRUE,TRUE,TRUE
+,butter,butter,food_drink,nouns,23.90870261,22,5.78,butter,butter,butter,butter,20.43,TRUE,TRUE,TRUE
+,butterfly,butterfly,animals,nouns,22.54512234,23,3.67,butterfly,butterfly,butterfly,butterfly,5.51,TRUE,TRUE,TRUE
+,buttons,button,clothing,nouns,21.78850695,20,4.78,button,button,button,button,28.25,TRUE,TRUE,TRUE
+,cake,cake,food_drink,nouns,21.63313802,22,3.26,cake,cake,cake,cake,45.06,TRUE,TRUE,TRUE
+,camera,camera,household,nouns,24.94613371,25,6,camera,camera,camera,camera,57,TRUE,TRUE,TRUE
+,camping,camping,places,other,31.16263019,NA,5.33,camping,camping,camping,camping,6.18,TRUE,TRUE,TRUE
+,can,can (object),household,nouns,26.71063666,27,4.32,can,can,can (item),can,5247.45,TRUE,TRUE,TRUE
+,candy_1,candy,food_drink,nouns,22.00849813,22,4,candy,candy,candy,candy,35.78,TRUE,TRUE,TRUE
+,car,car,vehicles,nouns,16.93378021,16,3.37,car,car,car,car,483.06,TRUE,TRUE,TRUE
+,carrot,carrots,food_drink,nouns,23.27305918,23,2.74,carrot,carrots,carrots,carrot,3.82,TRUE,TRUE,TRUE
+,cat,cat,animals,nouns,17.27125582,18,3.68,cat,cat,cat,cat,66.33,TRUE,TRUE,TRUE
+,cat,kitty,animals,nouns,17.09833362,16,3.64,kitty,kitten,kitty,kitten,4.73,TRUE,TRUE,TRUE
+,cereal,cereal,food_drink,nouns,21.55702474,22,4.44,cereal,cereal,cereal,cereal,6.35,TRUE,TRUE,TRUE
+,chair,chair,furniture_rooms,nouns,20.32574972,19,3.43,chair,chair,chair,chair,49.24,TRUE,TRUE,TRUE
+,cheek,cheek,body_parts,nouns,22.86220424,22,5.06,cheek,cheek,cheek,cheek,7.16,TRUE,TRUE,TRUE
+,cheese,cheese,food_drink,nouns,17.66447363,17,4.33,cheese,cheese,cheese,cheese,39.04,TRUE,TRUE,TRUE
+,children,child,people,other,31.01239879,NA,5.15,child,child,child,child,157.65,TRUE,TRUE,TRUE
+,chocolate,chocolate,food_drink,nouns,24.42716476,26,3.33,chocolate,chocolate,chocolate,chocolate,29.39,TRUE,TRUE,TRUE
+,church,church*,places,other,26.47988803,26,5.15,church,church,church,church,69.67,TRUE,TRUE,TRUE
+,cloud,cloud,outside,nouns,24.85821048,27,3.63,cloud,cloud,cloud,cloud,11.75,TRUE,TRUE,TRUE
+,clown,clown,people,other,26.43701835,23,3.72,clown,clown,clown,clown,15.82,TRUE,TRUE,TRUE
+,coffee,coffee,food_drink,nouns,24.36227292,22,4.94,coffee,coffee,coffee,coffee,144.53,TRUE,TRUE,TRUE
+,comb,comb,household,nouns,24.30029974,23,5.5,comb,comb,comb,comb,6.06,TRUE,TRUE,TRUE
+,cookie,cookie,food_drink,nouns,17.583781,16,3.37,cookie,cookie,cookie,cookie,16.71,TRUE,TRUE,TRUE
+,corn_1,corn,food_drink,nouns,23.45077759,23,4.61,corn,corn,corn,corn,14.22,TRUE,TRUE,TRUE
+,country,country,places,other,33.46246617,NA,7.05,country,country,country,country,161.84,TRUE,TRUE,TRUE
+,cow,cow,animals,nouns,19.44727505,19,3.94,cow,cow,cow,cow,25.51,TRUE,TRUE,TRUE
+,cowboy,cowboy,people,other,29.61833466,NA,4.55,cowboy,cowboy,cowboy,cowboy,18.98,TRUE,TRUE,TRUE
+,cracker,cracker,food_drink,nouns,18.61589503,17,4.9,cracker,cracker,cracker,cracker,5.76,TRUE,TRUE,TRUE
+,crocodile,alligator,animals,nouns,24.81540309,25,4.78,alligator,alligator,alligator,alligator,3.49,TRUE,TRUE,TRUE
+,deer,deer,animals,nouns,25.82484253,27,5.17,deer,deer,deer,deer,8.71,TRUE,TRUE,TRUE
+,diaper,diaper,clothing,nouns,18.90023005,19,3.4,diaper,diaper,diaper,diaper,4.27,TRUE,TRUE,TRUE
+,doctor,doctor,people,other,24.15870774,23,4.6,doctor,doctor,doctor,doctor,263.94,TRUE,TRUE,TRUE
+,dog,dog,animals,nouns,13.0174018,16,2.8,dog,dog,dog,dog,192.84,TRUE,TRUE,TRUE
+,dog,puppy,animals,nouns,20.26150237,19,3.28,puppy,puppy,puppy,puppy,11.45,TRUE,TRUE,TRUE
+,doll,doll,toys,nouns,21.49325513,20,3.68,doll,doll,doll,doll,24.76,TRUE,TRUE,TRUE
+,door,door,furniture_rooms,nouns,19.664695,19,3.05,door,door,door,door,292.06,TRUE,TRUE,TRUE
+,drawer,drawer,furniture_rooms,nouns,26.73544663,26,5.37,drawer_(the_furniture),drawer,drawer,drawer,13,TRUE,TRUE,TRUE
+,dress,dress (object),clothing,nouns,24.87809734,23,4.05,dress,dress,dress,dress,87.2,TRUE,TRUE,TRUE
+,drink,drink (beverage),food_drink,nouns,20.69680473,21,3.47,drink,drink,drink (food),drink,247.39,TRUE,TRUE,TRUE
+,duck,duck,animals,nouns,16.44313951,16,3.5,duck,duck,duck,duck,24.76,TRUE,TRUE,TRUE
+,egg,egg,food_drink,nouns,21.59203724,21,3.89,egg,egg,egg,egg,26.04,TRUE,TRUE,TRUE
+,elephant,elephant,animals,nouns,22.14596716,22,4.8,elephant,elephant,elephant,elephant,11.37,TRUE,TRUE,TRUE
+,eyes,eye,body_parts,nouns,16.66651257,16,3.75,eye,eye,eye,eye,111.78,TRUE,TRUE,TRUE
+,face,face,body_parts,nouns,23.21965714,23,3.75,face,face,face,face,289.16,TRUE,TRUE,TRUE
+,farm,farm,places,other,27.33528641,27,3.85,farm,farm,farm,farm,30.04,TRUE,TRUE,TRUE
+,father,daddy*,people,other,-1.400334971,16,2.58,daddy,dad,daddy,dad,507.25,TRUE,TRUE,TRUE
+,finger,finger,body_parts,nouns,21.31484453,21,3.43,finger,finger,finger,finger,36.67,TRUE,TRUE,TRUE
+,fireman,fireman,people,other,27.18950284,27,5.16,fireman,firefighter,fireman,firefighter,1.02,TRUE,FALSE,TRUE
+,fish,fish (animal),animals,nouns,18.44068124,18,4.05,fish_(the_animal),fish,fish (animal),fish,83.49,TRUE,TRUE,TRUE
+,flag,flag,outside,nouns,25.74157049,26,5.33,flag,flag,flag,flag,17.49,TRUE,TRUE,TRUE
+,flower,flower,outside,nouns,20.00169167,19,3.11,flower,flower,flower,flower,22.76,TRUE,TRUE,TRUE
+,forest,woods,places,other,31.42251846,NA,4.93,woods,woods,woods,woods,29.06,TRUE,TRUE,TRUE
+,fork,fork,household,nouns,21.5083592,21,3.63,fork,fork,fork,fork,8.82,TRUE,TRUE,TRUE
+,frenchfries,french fries,food_drink,nouns,22.37999073,21,NA,french_fries,fries,french fries,fries,NA,TRUE,TRUE,TRUE
+,friend,friend,people,other,26.12774197,27,3.57,friend,friend,friend,friend,419.29,TRUE,TRUE,TRUE
+,frog,frog,animals,nouns,21.59177996,22,4.32,frog,frog,frog,frog,11.82,TRUE,TRUE,TRUE
+,game,game,toys,nouns,25.5294148,27,4.26,game,game,game,game,233.84,TRUE,TRUE,TRUE
+,gift,present,toys,nouns,24.66856983,23,4.83,present,present,present,present,89.45,TRUE,TRUE,TRUE
+,giraffe,giraffe,animals,nouns,23.71163734,26,5,giraffe,giraffe,giraffe,giraffe,1.49,TRUE,TRUE,TRUE
+,girl,girl,people,other,23.45264539,22,4,girl,girl,girl,girl,557.12,TRUE,TRUE,TRUE
+,glass_1,glass,household,nouns,24.97289199,23,4.47,glass,glass,glass,glass,60.71,TRUE,TRUE,TRUE
+,glasses,glasses,household,nouns,22.78042327,23,4.35,glasses,glasses,glasses,glasses,33.12,TRUE,TRUE,TRUE
+,gloves,gloves,clothing,nouns,26.64476116,28,4.3,gloves,gloves,gloves,glove,10.1,TRUE,TRUE,TRUE
+,grandfather,grandma*,people,other,17.19374519,18,2.58,grandma,grandma,grandma,grandma,45.59,TRUE,TRUE,TRUE
+,grandmother,grandpa*,people,other,18.21394532,18,3.06,grandpa,grandpa,grandpa,grandpa,32.57,TRUE,TRUE,TRUE
+,grapes,grapes,food_drink,nouns,21.59049325,21,3.94,grape,grape,grapes,grape,4,TRUE,TRUE,TRUE
+,grass,grass,outside,nouns,22.92264727,22,3.94,grass,grass,grass,grass,16.78,TRUE,TRUE,TRUE
+,gum,gum,food_drink,nouns,26.34792998,25,4.89,gum,gum,gum,gum,13.39,TRUE,TRUE,TRUE
+,hair,hair,body_parts,nouns,19.25020954,19,3.17,hair,hair,hair,hair,153.55,TRUE,TRUE,TRUE
+,hamburger,hamburger,food_drink,nouns,24.30924369,23,5.21,hamburger,hamburger,hamburger,hamburger,7.78,TRUE,TRUE,TRUE
+,hammer,hammer,household,nouns,25.23644733,23,5.42,hammer,hammer,hammer,hammer,12.47,TRUE,TRUE,TRUE
+,hands,hand,body_parts,nouns,20.76285378,19,2.74,hand,hand,hand,hand,279.65,TRUE,TRUE,TRUE
+,hate,hat,clothing,nouns,18.0418853,18,3.33,hat,hat,hat,hat,64.18,TRUE,TRUE,TRUE
+,head,head,body_parts,nouns,21.08386805,21,3.42,head,head,head,head,371.51,TRUE,TRUE,TRUE
+,helicopter,helicopter,vehicles,nouns,24.42727061,25,5.26,helicopter,helicopter,helicopter,helicopter,15.8,TRUE,TRUE,TRUE
+,home,home,places,other,21.17518853,21,3.87,home,home,home,home,774.33,TRUE,TRUE,TRUE
+,horse,horse,animals,nouns,20.00326953,19,4.15,horse,horse,horse,horse,92.88,TRUE,TRUE,TRUE
+,horse,pony,animals,nouns,27.30214092,26,5.39,pony,pony,pony,pony,8.1,TRUE,TRUE,TRUE
+,hose,hose,outside,nouns,26.52950701,26,5.33,hose,hose,hose,hose,8.06,TRUE,TRUE,TRUE
+,house,house,places,other,22.22968188,22,3.16,house,house,house,house,514,TRUE,TRUE,TRUE
+,ice,ice,food_drink,nouns,22.23375138,22,3.86,ice,ice,ice,ice,79.55,TRUE,TRUE,TRUE
+,icecream,ice cream,food_drink,nouns,21.43298396,22,3.33,ice_cream,ice cream,ice cream,icecream,#N/A,TRUE,TRUE,TRUE
+,jacket,jacket,clothing,nouns,23.32266643,23,3.95,jacket,jacket,jacket,jacket,33.41,TRUE,TRUE,TRUE
+,jelly,jelly,food_drink,nouns,25.84604098,25,4.11,jelly,jelly,jelly,jelly,7.12,TRUE,TRUE,TRUE
+,jigsaw_puzzle,puzzle,toys,nouns,23.74597692,24,5.11,puzzle,puzzle,puzzle,puzzle,7.33,TRUE,TRUE,TRUE
+,juice_1,juice,food_drink,nouns,17.1850153,16,4.4,juice,juice,juice,juice,26.88,TRUE,TRUE,TRUE
+,key,keys,household,nouns,20.71199867,17,3.58,key,keys,keys,key,86.86,TRUE,TRUE,TRUE
+,kitchen,kitchen,furniture_rooms,nouns,23.41508688,23,3.68,kitchen,kitchen,kitchen,kitchen,58.31,TRUE,TRUE,TRUE
+,knife,knife,household,nouns,24.57805121,23,4.15,knife,knife,knife,knife,46.8,TRUE,TRUE,TRUE
+,lamp,lamp,household,nouns,27.19430538,28,4,lamp,lamp,lamp,lamp,12.88,TRUE,TRUE,TRUE
+,lawnmower,lawn mower,outside,nouns,26.28983009,23,6.11,lawn_mower,lawn mower,lawn mower,lawnmower,0.47,TRUE,FALSE,TRUE
+,lion,lion,animals,nouns,22.43681334,23,4.42,lion,lion,lion,lion,15.35,TRUE,TRUE,TRUE
+,living_room,living room,furniture_rooms,nouns,26.79651678,26,NA,living_room,living room,living room,living room,NA,TRUE,TRUE,TRUE
+,lollipop,lollipop,food_drink,nouns,26.73891841,27,3.89,lollipop,lollipop,lollipop,lollipop,1.78,TRUE,TRUE,TRUE
+,mailman,mailman,people,other,27.82215344,27,4.72,mailman,mailman,mailman,mailman,2.88,TRUE,TRUE,TRUE
+,man,man,people,other,24.76418293,22,3.11,man,man,man,man,1845.75,TRUE,TRUE,TRUE
+,meat,meat,food_drink,nouns,25.35411497,24,4.42,meat,meat,meat,meat,43.65,TRUE,TRUE,TRUE
+,medicine,medicine,household,nouns,23.70381663,23,4.89,medicine,medicine,medicine,medicine,34.2,TRUE,TRUE,TRUE
+,melon,melon,food_drink,nouns,27.40429592,27,4.21,melon,melon,mellon,melon,4.27,TRUE,FALSE,TRUE
+,milk,milk,food_drink,nouns,17.64123586,19,3.37,milk,milk,milk,milk,42.53,TRUE,TRUE,TRUE
+,money,money,household,nouns,22.84704748,22,5.11,money,money,money,money,640.76,TRUE,TRUE,TRUE
+,monkey,monkey,animals,nouns,20.96934574,21,4.21,monkey,monkey,monkey,monkey,33.51,TRUE,TRUE,TRUE
+,moon,moon,outside,nouns,20.28989383,21,4.83,moon,moon,moon,moon,49.96,TRUE,TRUE,TRUE
+,mop,mop,household,nouns,28.44982684,30,5.11,mop,mop,mop,mop,4.14,TRUE,TRUE,TRUE
+,mother,mommy*,people,other,-1.504492184,16,2.22,mommy,mom,mommy,mom,430.39,TRUE,TRUE,TRUE
+,motorcycle,motorcycle,vehicles,nouns,24.76355429,23,5.05,motorcycle,motorcycle,motorcycle,motorcycle,8.92,TRUE,TRUE,TRUE
+,mouse,mouse,animals,nouns,22.49370439,21,4.94,mouse,mouse,mouse,mouse,19.12,TRUE,TRUE,TRUE
+,mouth,mouth,body_parts,nouns,19.73968295,19,3.58,mouth,mouth,mouth,mouth,104.41,TRUE,TRUE,TRUE
+,movie,movie,places,other,26.43939978,29,3.56,movies,movie,movie,movie,122.96,TRUE,TRUE,TRUE
+,napkin,napkin,household,nouns,24.15536324,23,4.79,napkin,napkin,napkin,napkin,3.61,TRUE,TRUE,TRUE
+,necklace,necklace,clothing,nouns,25.05522804,24,5,necklace,necklace,necklace,necklace,9.75,TRUE,TRUE,TRUE
+,nurse,nurse,people,other,31.16947702,NA,5.84,nurse,nurse,nurse,nurse,44.98,TRUE,TRUE,TRUE
+,nut,nuts,food_drink,nouns,26.67861849,26,5.21,nuts,nuts,nuts,nut,15.63,TRUE,TRUE,TRUE
+,orange,orange (food),food_drink,nouns,22.25372528,22,3.26,orange,orange,orange (food),orange,22.31,TRUE,TRUE,TRUE
+,outside,outside,places,other,19.51690062,19,3.58,outside,outside,outside,outside,170.02,TRUE,TRUE,TRUE
+,owl,owl,animals,nouns,23.13649325,22,6.21,owl,owl,owl,owl,5.61,TRUE,TRUE,TRUE
+,pants,pants,clothing,nouns,21.74379025,21,3.23,pants,pants,pants,pants,58.75,TRUE,TRUE,TRUE
+,paper,paper,household,nouns,22.18409273,21,4,paper,paper,paper,paper,103.35,TRUE,TRUE,TRUE
+,party,party,places,other,25.3846255,26,4.58,party,party,party,party,233.14,TRUE,TRUE,TRUE
+,peanut_butter,peanut butter,food_drink,nouns,24.03005852,23,NA,peanut_butter,peanut butter,peanut butter,peanut butter,NA,TRUE,TRUE,TRUE
+,pencil,pencil,toys,nouns,24.59542866,25,4.06,pencil,pencil,pencil,pencil,9.86,TRUE,TRUE,TRUE
+,penny,penny,household,nouns,26.09981882,25,4.67,penny,penny,penny,penny,24.29,TRUE,TRUE,TRUE
+,people,people,people,other,26.44488967,26,3.52,people,people,people,people,1102.98,TRUE,TRUE,TRUE
+,person,person,people,other,31.54978586,NA,4.67,person,person,person,person,212.88,TRUE,TRUE,TRUE
+,picture,picture,household,nouns,23.51323389,23,4.05,picture,picture,picture,picture,138.45,TRUE,TRUE,TRUE
+,pig,pig,animals,nouns,20.32578605,19,3.84,pig,pig,pig,pig,39.14,TRUE,TRUE,TRUE
+,pjs,pajamas,clothing,nouns,22.78413519,23,3.48,pajamas,pajamas,pajamas,pajamas,5.82,TRUE,TRUE,TRUE
+,plate,plate,household,nouns,23.45700219,23,3.84,plate,plate,plate,plate,25.65,TRUE,TRUE,TRUE
+,playground,playground,places,other,27.08580541,29,4.28,playground,playground,playground,playground,5.1,TRUE,TRUE,TRUE
+,policeman,police,people,other,27.89672926,27,5.05,police,police,police,police,236.16,TRUE,TRUE,TRUE
+,potato,potato,food_drink,nouns,24.66266224,25,4.84,potato,potato,potato,potato,11.29,TRUE,TRUE,TRUE
+,rabbit,bunny,animals,nouns,20.0411862,19,4.5,bunny,bunny,bunny,bunny,18.55,TRUE,TRUE,TRUE
+,radio,radio,household,nouns,26.63880817,26,5.17,radio,radio,radio,radio,77.18,TRUE,TRUE,TRUE
+,rain,rain,outside,nouns,21.67828998,20,3.6,rain,rain,rain,rain,48.9,TRUE,TRUE,TRUE
+,rock,rock,outside,nouns,21.54236439,21,3.22,rock,rock,rock,rock,86.16,TRUE,TRUE,TRUE
+,rocking_chair,rocking chair,furniture_rooms,nouns,25.94326302,25,7.06,rocker,rocking chair,rocking chair,rocker,1.25,TRUE,FALSE,TRUE
+,rooster,rooster,animals,nouns,27.14415999,27,6.41,rooster,rooster,rooster,rooster,3.86,TRUE,TRUE,TRUE
+,salt,salt,food_drink,nouns,27.70051041,29,5.05,salt,salt,salt,salt,19.51,TRUE,TRUE,TRUE
+,sandwich,sandwich,food_drink,nouns,24.09876512,23,4.79,sandwich,sandwich,sandwich,sandwich,21.92,TRUE,TRUE,TRUE
+,sauce,sauce,food_drink,nouns,27.26643002,29,5.37,sauce,sauce,sauce,sauce,15.59,TRUE,TRUE,TRUE
+,school,school,places,other,23.11632525,23,3.89,school,school,school,school,333.12,TRUE,TRUE,TRUE
+,scissors,scissors,household,nouns,25.12524339,25,4.5,scissors,scissors,scissors,scissors,6.69,TRUE,TRUE,TRUE
+,sheep,sheep,animals,nouns,22.94529748,23,4.25,sheep,sheep,sheep,sheep,13.43,TRUE,TRUE,TRUE
+,shirt,shirt,clothing,nouns,21.27199136,21,3.53,shirt,shirt,shirt,shirt,46.37,TRUE,TRUE,TRUE
+,shoes,shoe,clothing,nouns,15.37415951,16,2.6,shoes,shoe,shoe,shoe,30.39,TRUE,TRUE,TRUE
+,shorts,shorts,clothing,nouns,24.34499005,23,3.95,shorts,shorts,shorts,shorts,9.41,TRUE,TRUE,TRUE
+,shoulder,shoulder,body_parts,nouns,26.66886302,27,4.5,shoulder,shoulder,shoulder,shoulder,26.2,TRUE,TRUE,TRUE
+,shovel,shovel,outside,nouns,25.2876622,23,6.28,shovel,shovel,shovel,shovel,6.84,TRUE,TRUE,TRUE
+,shower,shower,furniture_rooms,nouns,23.46435811,22,4.72,shower,shower,shower,shower,41.12,TRUE,TRUE,TRUE
+,sister,sister,people,other,26.74207224,28,3.68,sister,sister,sister,sister,180.53,TRUE,TRUE,TRUE
+,slide,slide (object),outside,nouns,22.50469894,22,4.79,slide,slide,slide,slide,17.82,TRUE,TRUE,TRUE
+,snow,snow,outside,nouns,24.49821849,23,4.11,snow,snow,snow,snow,31.35,TRUE,TRUE,TRUE
+,soap,soap,household,nouns,22.10108254,20,3.17,soap,soap,soap,soap,15.2,TRUE,TRUE,TRUE
+,socks,sock,clothing,nouns,20.16573128,17,2.94,socks,sock,sock,sock,8.98,TRUE,TRUE,TRUE
+,soda,soda/pop,food_drink,nouns,25.713585,22,4.42,soda/pop,soda,soda pop,soda,19.84,TRUE,TRUE,TRUE
+,soup,soup,food_drink,nouns,24.39324029,23,5.37,soup,soup,soup,soup,25.2,TRUE,TRUE,TRUE
+,spoon,spoon,household,nouns,19.58550418,19,2.5,spoon,spoon,spoon,spoon,7.61,TRUE,TRUE,TRUE
+,squirrel,squirrel,animals,nouns,24.47506461,26,4.44,squirrel,squirrel,squirrel,squirrel,5.47,TRUE,TRUE,TRUE
+,stairs,stairs,furniture_rooms,nouns,24.41297366,22,4.22,stairs,stairs,stairs,stairs,23.76,TRUE,TRUE,TRUE
+,star,star,outside,nouns,21.99005286,24,3.89,star_(outside),star,star,star,81.35,TRUE,TRUE,TRUE
+,stomach,tummy,body_parts,nouns,21.02962771,20,5.26,tummy,stomach,tummy,stomach,33.82,TRUE,TRUE,TRUE
+,story_1,story,toys,nouns,24.26462702,23,3.89,story,story,story,story,220.78,TRUE,TRUE,TRUE
+,strawberry,strawberry,food_drink,nouns,23.62083452,23,4.21,strawberry,strawberry,strawberry,strawberry,5.53,TRUE,TRUE,TRUE
+,street,street,outside,nouns,24.94302444,25,4.58,street,street,street,street,148.18,TRUE,TRUE,TRUE
+,sun,sun,outside,nouns,22.47848396,23,3.4,sun,sun,sun,sun,69.67,TRUE,TRUE,TRUE
+,sweater,sweater,clothing,nouns,23.76501915,26,5.22,sweater,sweater,sweater,sweater,13.8,TRUE,TRUE,TRUE
+,table,table,furniture_rooms,nouns,23.05535872,23,4.39,table,table,table,table,105.63,TRUE,TRUE,TRUE
+,tape,tape,household,nouns,25.53115511,25,4.42,tape_(scotch),tape,tape,tape,68.84,TRUE,TRUE,TRUE
+,teacher,teacher,people,other,27.61745268,29,4.55,teacher,teacher,teacher,teacher,55.73,TRUE,TRUE,TRUE
+,teeth,tooth,body_parts,nouns,21.31436737,19,3.61,tooth,tooth,tooth,tooth,13.57,TRUE,TRUE,TRUE
+,telephone,telephone,household,nouns,20.67081039,20,4.63,telephone,telephone,telephone,telephone,32.37,TRUE,TRUE,TRUE
+,tiger,tiger,animals,nouns,23.33595979,23,4,tiger,tiger,tiger,tiger,18.53,TRUE,TRUE,TRUE
+,tissue,tissue/kleenex,household,nouns,24.28838079,24,4.76,tissue/kleenex,tissue,tissue,tissue,10.73,TRUE,TRUE,TRUE
+,toast,toast,food_drink,nouns,22.89976452,21,4.67,toast,toast,toast,toast,33.47,TRUE,TRUE,TRUE
+,tongue,tongue,body_parts,nouns,22.76214485,22,4.47,tongue,tongue,tongue,tongue,31.16,TRUE,TRUE,TRUE
+,toothbrush,toothbrush,household,nouns,21.09109388,20,4.33,toothbrush,toothbrush,toothbrush,toothbrush,5,TRUE,TRUE,TRUE
+,towel,towel,household,nouns,22.59991918,22,3.22,towel,towel,towel,towel,14.16,TRUE,TRUE,TRUE
+,train,train,vehicles,nouns,20.60760111,20,4,train,train,train,train,95.06,TRUE,TRUE,TRUE
+,trash,trash,household,nouns,23.9407108,27,4.47,trash,trash,trash,trash,22.47,TRUE,TRUE,TRUE
+,trash,garbage,household,nouns,25.7297666,23,4.89,garbage,garbage,garbage,garbage,26.1,TRUE,TRUE,TRUE
+,tree,tree,outside,nouns,19.72685692,19,3.57,tree,tree,tree,tree,65,TRUE,TRUE,TRUE
+,turkey,turkey,animals,nouns,26.01119078,26,3.95,turkey,turkey,turkey,turkey,22.61,TRUE,TRUE,TRUE
+,turtle,turtle,animals,nouns,22.2518395,23,4.17,turtle,turtle,turtle,turtle,17.04,TRUE,TRUE,TRUE
+,TV,tv,furniture_rooms,nouns,21.1998677,19,4.11,TV,television,TV,television,33.9,TRUE,TRUE,TRUE
+,uncle,uncle,people,other,25.5042854,25,4.47,uncle,uncle,uncle,uncle,124.06,TRUE,TRUE,TRUE
+,underwear,underpants,clothing,nouns,26.98967384,27,3.94,underpants,underwear,underpan,underwear,21.67,TRUE,TRUE,TRUE
+,vacuum,vacuum,household,nouns,23.95842129,24,6.74,vacuum,vacuum,vacuum,vacuum,5.76,TRUE,TRUE,TRUE
+,wash_machine,washing machine,furniture_rooms,nouns,26.52254546,28,6.32,washing_machine,washer,washer,washer,2.04,TRUE,TRUE,TRUE
+,water,water (beverage),food_drink,nouns,18.65229515,19,2.37,water_(a_drink),water,water (food),water,225.06,TRUE,TRUE,TRUE
+,window,window,furniture_rooms,nouns,24.35088039,23,4.74,window,window,window,window,86,TRUE,TRUE,TRUE
+,wolf,wolf,animals,nouns,27.86562941,27,4.5,wolf,wolf,wolf,wolf,20.27,TRUE,TRUE,TRUE
+,work,work (place),places,other,23.41733137,22,5.86,work,work,work (place),work,798.02,TRUE,TRUE,TRUE
+,wristwatch,watch (object),household,nouns,23.78454081,22,4.33,watch,watch,watch (item),watch,330.02,TRUE,TRUE,TRUE
+,zipper,zipper,clothing,nouns,24.27840184,23,5,zipper,zipper,zipper,zipper,2.82,TRUE,TRUE,TRUE
+,zoo,zoo,places,other,25.12781951,25,3.75,zoo,zoo,zoo,zoo,13.65,TRUE,TRUE,TRUE
+,,jello,food_drink,nouns,27.35854268,27,NA,jello,jello,jello,jello,NA,TRUE,TRUE,TRUE
+,,ankle,body_parts,nouns,28.99087007,30,4.89,ankle,ankle,ankle,ankle,8.02,TRUE,TRUE,TRUE
+,,ant,animals,nouns,24.23273918,23,4.32,ant,ant,ant,ant,5.35,TRUE,TRUE,TRUE
+, ,applesauce,food_drink,nouns,24.76170462,23,4.32,applesauce,applesauce,applesauce,applesauce,0.59,TRUE,FALSE,TRUE
+,aunt,aunt,people,other,25.22528103,24,3.8,aunt,aunt,aunt,aunt,55.2,TRUE,TRUE,TRUE
+,babysitter,babysitter,people,other,30.63100598,NA,5.86,babysitter,babysitter,babysitter,babysitter,4.63,TRUE,FALSE,TRUE
+,backyard,backyard,outside,nouns,26.30986647,26,3.94,backyard,yard,yard,yard,25.06,TRUE,TRUE,TRUE
+,bathtub,bathtub,furniture_rooms,nouns,21.6135784,22,3.22,bathtub,bathtub,bathtub,bathtub,6.1,TRUE,TRUE,TRUE
+,navel,belly button,body_parts,nouns,19.99595798,19,3.78,belly_button,belly button,belly button,bellybutton,0.65,TRUE,FALSE,TRUE
+,,bench,furniture_rooms,nouns,29.74670371,NA,4.21,bench,bench,bench,bench,9.67,TRUE,TRUE,TRUE
+,,block,toys,nouns,20.98774613,20,4.79,block_(toy),block,block,block,40.53,TRUE,TRUE,TRUE
+,,broom,household,nouns,23.26860427,21,5.5,broom,broom,broom,broom,4.76,TRUE,TRUE,TRUE
+,,bucket,household,nouns,25.4450892,26,5.61,bucket,bucket,bucket,bucket,10.02,TRUE,TRUE,TRUE
+,,buttocks/bottom*,body_parts,nouns,21.73956598,21,3.73,buttocks,butt,buttocks,butt,38.57,TRUE,TRUE,TRUE
+,,chalk,toys,nouns,26.61418351,30,4.47,chalk,chalk,chalk,chalk,3.59,TRUE,TRUE,TRUE
+,,cheerios,food_drink,nouns,23.01014604,21,NA,cheerios,cheerios,cheerios,cheerios,NA,TRUE,FALSE,TRUE
+,,chicken (animal),animals,nouns,22.31164288,22,3.26,chicken,chicken,chicken(anml),chicken,61.73,TRUE,TRUE,TRUE
+,chin_2,chin,body_parts,nouns,23.37820569,22,4.22,chin,chin,chin,chin,12.69,TRUE,FALSE,TRUE
+,,circus,places,other,29.93089508,NA,4.53,circus,circus,circus,circus,17.06,TRUE,TRUE,TRUE
+,clock,clock,household,nouns,22.34462414,20,4.42,clock,clock,clock,clock,58.63,TRUE,TRUE,TRUE
+,closet_1,closet,furniture_rooms,nouns,25.49795508,26,5,closet,closet,closet,closet,27.08,TRUE,TRUE,TRUE
+,,coat,clothing,nouns,22.14125079,21,3.58,coat,coat,coat,coat,42.08,TRUE,TRUE,TRUE
+,,coke,food_drink,nouns,27.89177444,28,4.74,coke,coke,coke,coke,18.59,TRUE,TRUE,TRUE
+,couch_1,couch,furniture_rooms,nouns,23.87578513,23,3.74,couch,couch,couch,couch,23.47,TRUE,TRUE,TRUE
+,,crayon,toys,nouns,22.5316752,21,3.2,crayon,crayon,crayon,crayon,0.41,TRUE,TRUE,TRUE
+,,crib,furniture_rooms,nouns,25.08795015,24,6.05,crib,crib,crib,crib,6.2,TRUE,TRUE,TRUE
+,cup,cup,household,nouns,19.07459256,19,3.57,cup,cup,cup,cup,51.65,TRUE,TRUE,TRUE
+,,dish,household,nouns,26.4135119,25,4.89,dish,dish,dish,dish,11.45,TRUE,TRUE,TRUE
+,donkey,donkey,animals,nouns,27.79522905,NA,6,donkey,donkey,donkey,donkey,5.35,TRUE,TRUE,TRUE
+,donut,donut,food_drink,nouns,25.90468355,26,NA,donut,donut,donut,donut,NA,TRUE,FALSE,TRUE
+,,downtown,places,other,32.07860658,NA,6.42,downtown,downtown,downtown,downtown,21.92,TRUE,TRUE,TRUE
+,dryer,dryer,furniture_rooms,nouns,27.23156403,27,6.16,dryer,dryer,dryer,dryer,4.53,TRUE,TRUE,TRUE
+,ear,ear,body_parts,nouns,17.66627563,17,3.63,ear,ear,ear,ear,32,TRUE,TRUE,TRUE
+,firetruck,firetruck,vehicles,nouns,23.75973126,25,3.69,firetruck,firetruck,firetruck,firetruck,0.06,TRUE,FALSE,TRUE
+,,fish (food),food_drink,nouns,21.64210236,21,4.05,fish_(a_food),fish,fish (food),fish,83.49,TRUE,TRUE,TRUE
+,,food,food_drink,nouns,22.97427939,23,3.25,food,food,food,food,154.43,TRUE,TRUE,TRUE
+,,foot,body_parts,nouns,20.49413203,19,3.44,feet,foot,foot,foot,64.92,TRUE,TRUE,TRUE
+,,garden,outside,nouns,28.09593867,30,5.33,garden,garden,garden,garden,26.55,TRUE,TRUE,TRUE
+,,gas station,places,other,27.79278116,29,NA,gas_station,gas station,gas station,gas station,NA,TRUE,FALSE,TRUE
+,,goose,animals,nouns,26.68842002,28,5.15,goose,goose,goose,goose,13.04,TRUE,TRUE,TRUE
+,hen,hen,animals,nouns,29.27068464,NA,6.39,hen,hen,hen,hen,3.2,TRUE,TRUE,TRUE
+,,high chair,furniture_rooms,nouns,25.13019595,22,3.79,high_chair,high chair,high chair,highchair,0.16,TRUE,FALSE,TRUE
+,jar,jar,household,nouns,28.00893742,NA,5.44,jar,jar,jar,jar,8.31,TRUE,TRUE,TRUE
+,,jeans,clothing,nouns,27.03939783,29,5.26,jeans,jeans,jeans,jeans,6.61,TRUE,TRUE,TRUE
+,,knee,body_parts,nouns,22.12560216,21,4.42,knee,knee,knee,knee,14.69,TRUE,TRUE,TRUE
+,,ladder,outside,nouns,26.61156272,26,4.4,ladder,ladder,ladder,ladder,9.25,TRUE,TRUE,TRUE
+,,lady,people,other,27.19768732,26,3.68,lady,lady,lady,lady,217.08,TRUE,TRUE,TRUE
+,,lamb,animals,nouns,26.32114157,26,4.15,lamb,lamb,lamb,lamb,10.63,TRUE,TRUE,TRUE
+,,leg,body_parts,nouns,22.48052888,22,3,leg,leg,leg,leg,56.51,TRUE,TRUE,TRUE
+,light_2,light,household,nouns,19.88589007,20,4.05,light,light,light,light,165.2,TRUE,TRUE,TRUE
+,lips,lips,body_parts,nouns,24.73994388,25,3.79,lips,lips,lips,lip,10.75,TRUE,TRUE,TRUE
+,,mittens,clothing,nouns,27.15424321,27,4.72,mittens,mitten,mittens,mitten,0.45,TRUE,TRUE,TRUE
+,moose,moose,animals,nouns,28.65065373,NA,5.22,moose,moose,moose,moose,5.53,TRUE,TRUE,TRUE
+,,muffin,food_drink,nouns,25.59498278,25,5.11,muffin,muffin,muffin,muffin,5.82,TRUE,TRUE,TRUE
+,nail,nail,household,nouns,27.41463895,27,5.42,nail_(an_object),nails,nail,nail,18.65,TRUE,TRUE,TRUE
+,,"noodles, spaghetti",food_drink,nouns,21.70080941,22,5.3,noodles,noodles,noodles,noodles,6.06,TRUE,TRUE,TRUE
+,spaghetti,"noodles, spaghetti",food_drink,nouns,21.70080941,23,4.33,spaghetti,spaghetti,spaghetti,spaghetti,5.92,TRUE,TRUE,TRUE
+,nose,nose,body_parts,nouns,16.74639285,16,2.95,nose,nose,nose,nose,69.75,TRUE,TRUE,TRUE
+, ,oven,furniture_rooms,nouns,26.13828458,27,5.67,oven,oven,oven,oven,8.88,TRUE,TRUE,TRUE
+,,owie/boo boo,body_parts,nouns,18.77047642,17,7.56,owie/boo_boo,injury,owie,injury,10.2,TRUE,TRUE,TRUE
+,pancake,pancake,food_drink,nouns,23.79063859,23,4.26,pancake,pancakes,pancake,pancake,3.96,TRUE,TRUE,TRUE
+,park,park,places,other,22.6401856,23,4.47,park,park,park,park,72.12,TRUE,TRUE,TRUE
+,pen,pen,toys,nouns,23.30043658,21,5.11,pen,pen,pen,pen,24.73,TRUE,TRUE,TRUE
+,penguin,penguin,animals,nouns,26.24275027,29,5.68,penguin,penguin,penguin,penguin,2.88,TRUE,TRUE,TRUE
+,penis,penis*,body_parts,nouns,26.34464674,26,8.53,penis,penis,penis,penis,13.41,TRUE,FALSE,TRUE
+,pickle,pickle,food_drink,nouns,25.56394042,23,6.05,pickle,pickle,pickle,pickle,4.61,TRUE,TRUE,TRUE
+,picnic,picnic,places,other,27.88795432,27,5.53,picnic,picnic,picnic,picnic,11.69,TRUE,TRUE,TRUE
+,pillow,pillow,household,nouns,21.85799745,21,3.47,pillow,pillow,pillow,pillow,11.39,TRUE,TRUE,TRUE
+,plant,plant,household,nouns,25.95283981,25,3.95,plant,plant,plant,plant,27.61,TRUE,TRUE,TRUE
+,,play dough,toys,nouns,26.27201741,27,NA,play_dough,play dough,play dough,play dough,NA,TRUE,TRUE,TRUE
+, ,play pen,furniture_rooms,nouns,31.65863374,30,4.41,play_pen,play pen,play pen,playpen,0.69,TRUE,FALSE,TRUE
+,pool,pool,outside,nouns,23.05584483,20,5.15,pool,pool,pool,pool,46.98,TRUE,TRUE,TRUE
+,popcorn,popcorn,food_drink,nouns,23.42995006,23,4.17,popcorn,popcorn,pop corn,popcorn,9.12,TRUE,TRUE,TRUE
+,,popsicle,food_drink,nouns,25.04232833,22,3.78,popsicle,popsicle,popsicle,popsicle,1.61,TRUE,FALSE,TRUE
+,,porch,furniture_rooms,nouns,29.1959265,NA,5.4,porch,porch,porch,porch,9.63,TRUE,TRUE,TRUE
+,toilet,potty,furniture_rooms,nouns,20.68961115,21,3.54,potty,toilet,potty,toilet,28.9,TRUE,TRUE,TRUE
+,,pudding,food_drink,nouns,28.0341602,28,4.79,pudding,pudding,pudding,pudding,6.16,TRUE,TRUE,TRUE
+,pumpkin,pumpkin,food_drink,nouns,24.93522367,26,4.78,pumpkin,pumpkin,pumpkin,pumpkin,10.84,TRUE,TRUE,TRUE
+,,purse,household,nouns,24.26769068,23,5.53,purse,purse,purse,purse,19.76,TRUE,TRUE,TRUE
+,raisin,raisin,food_drink,nouns,23.48532635,22,5.05,raisin,raisin,raisin,raisin,1.63,TRUE,TRUE,TRUE
+,refrigerator,refrigerator,furniture_rooms,nouns,25.09456744,25,4.11,refrigerator,refrigerator,refrigerator,refrigerator,8.37,TRUE,TRUE,TRUE
+,roof,roof,outside,nouns,28.12807487,30,5,roof,roof,roof,roof,35.65,TRUE,TRUE,TRUE
+,room,room,furniture_rooms,nouns,24.16610663,23,4.22,room,room,room,room,439.51,TRUE,TRUE,TRUE
+, ,sandbox,outside,nouns,26.70024681,25,4.14,sandbox,sandbox,sandbox,sandbox,1.06,TRUE,FALSE,TRUE
+,,sidewalk,outside,nouns,26.93234355,27,4.28,sidewalk,sidewalk,sidewalk,sidewalk,5.47,TRUE,TRUE,TRUE
+,sink,sink,furniture_rooms,nouns,24.81574882,23,4.47,sink,sink,sink,sink,16.92,TRUE,TRUE,TRUE
+,,sky,outside,nouns,23.68532443,23,4.17,sky,sky,sky,sky,44.8,TRUE,TRUE,TRUE
+,slipper,slipper,clothing,nouns,26.05874398,23,5.26,slippers,slippers,slipper,slipper,2.22,TRUE,TRUE,TRUE
+,,sneaker,clothing,nouns,29.07026608,30,6.25,sneaker,sneaker,sneaker,sneaker,0.69,TRUE,TRUE,TRUE
+,snowman,snowman,outside,nouns,26.59591812,27,3.47,snowman,snowman,snowman,snowman,1.9,TRUE,FALSE,TRUE
+,snowsuit,snowsuit,clothing,nouns,32.62939364,NA,6.39,snowsuit,snowsuit,snowsuit,snowsuit,0.12,TRUE,FALSE,TRUE
+,sofa,sofa,furniture_rooms,nouns,29.6777463,NA,4.5,sofa,sofa,sofa,sofa,5.86,TRUE,TRUE,TRUE
+, ,sprinkler,outside,nouns,28.25502051,27,5.53,sprinkler,sprinkler,sprinkler,sprinkler,0.92,TRUE,FALSE,TRUE
+,,stick,outside,nouns,23.87916967,23,3.89,stick,stick,stick,stick,97.12,TRUE,TRUE,TRUE
+,,stone,outside,nouns,29.79782235,30,4.44,stone,stone,stone,stone,40.63,TRUE,TRUE,TRUE
+, ,store,places,other,23.17782459,22,4.76,store,store,store,store,81.92,TRUE,TRUE,TRUE
+,,stove,furniture_rooms,nouns,25.7164282,26,4.32,stove,stove,stove,stove,7.59,TRUE,TRUE,TRUE
+,,stroller,vehicles,nouns,24.73337758,23,7.84,stroller,stroller,stroller,stroller,0.88,TRUE,FALSE,TRUE
+,,teddybear,animals,nouns,22.62047063,21,NA,teddy_bear,teddybear,teddy bear,teddybear,NA,TRUE,FALSE,TRUE
+,,tights,clothing,nouns,30.55586041,30,7.22,tights,tights,tights,tights,2.65,TRUE,FALSE,TRUE
+,,toe,body_parts,nouns,20.4635614,19,3,toe,toe,toe,toe,12.69,TRUE,TRUE,TRUE
+,tractor,tractor,vehicles,nouns,24.87501527,26,5.5,tractor,tractor,tractor,tractor,3.73,TRUE,TRUE,TRUE
+,,tray,household,nouns,30.88185467,NA,6.05,tray,tray,tray,tray,8.04,TRUE,TRUE,TRUE
+,,tricycle,vehicles,nouns,28.32856231,30,4.05,tricycle,tricycle,tricycle,tricycle,0.53,TRUE,TRUE,TRUE
+,,tuna,food_drink,nouns,29.62057915,27,5.73,tuna,tuna,tuna,tuna,8,TRUE,TRUE,TRUE
+,vagina,vagina*,body_parts,nouns,30.55922097,NA,8.89,vagina,vagina,vagina,vagina,5.06,TRUE,FALSE,TRUE
+,vanilla,vanilla,food_drink,nouns,30.10851991,NA,4.8,vanilla,vanilla,vanilla,vanilla,3.98,TRUE,TRUE,TRUE
+,vitamins,vitamins,food_drink,nouns,26.68747952,26,5.42,vitamins,vitamin,vitamins,vitamin,2.67,TRUE,TRUE,TRUE
+,,walker,household,nouns,32.64490526,NA,NA,walker,walker,walker,walker,NA,TRUE,TRUE,TRUE
+,,water (not beverage),outside,nouns,19.1678391,19,2.37,water_(found_outdoors),water,water (item),water,225.06,TRUE,TRUE,TRUE
+,wind,wind,outside,nouns,25.45662402,25,3.89,wind,wind,wind,wind,59.37,TRUE,TRUE,TRUE
+,backyard,yard,places,other,26.88510635,26,3.94,yard,yard,yard,yard,25.06,TRUE,TRUE,TRUE
+,,yogurt,food_drink,nouns,23.14641624,23,3.72,yogurt,yogurt,yogurt,yogurt,2.27,TRUE,TRUE,TRUE
+,zebra,zebra,animals,nouns,24.52029001,26,4.79,zebra,zebra,zebra,zebra,2.51,TRUE,TRUE,TRUE
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
