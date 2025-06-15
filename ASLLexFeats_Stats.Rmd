@@ -1,0 +1,380 @@
+---
+title: "ASLLexFeats_Stats"
+author: "Arielle Borovsky"
+date: "2024-12-23"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(jtools)
+library(sjPlot)
+library(lmerTest)
+library(corrplot)
+```
+
+## Load Datasets
+
+```{r data}
+load("data/ASLLexFeats.Rdata")
+signdata <- read_csv("data/signdata.csv") %>%
+  select("LemmaID", "Iconicity(Z)", `Phonological Complexity`)
+english_iconicity <- read_csv("data/iconicity_ratings_cleaned.csv") %>%
+  select(word, rating) %>%
+  rename(iconicity_rating = rating)
+
+concs <- concs %>%
+  left_join(signdata, by = c("Concept" = "LemmaID")) %>%
+  left_join(english_iconicity, by = c("Concept" = "word")) 
+
+WS_production_aoa_data <- read_csv("data/WS_production_aoa_data.csv") 
+concs.long <- concs %>%
+  mutate(
+    ASL_AoA_centered = (bglm_aoa_ASL - mean(concs$bglm_aoa_ASL, na.rm = TRUE)),
+    English_AoA_centered = (aoa - mean(concs$aoa, na.rm = TRUE))
+  ) %>%
+  pivot_longer(
+    cols = c(ASL_AoA_centered, English_AoA_centered),
+    names_to = "Language",
+    values_to = "AoA"
+  ) %>%
+  mutate(Language = as.factor(
+    case_when(
+      Language == "English_AoA_centered" ~ "English",
+      Language == "ASL_AoA_centered" ~ "ASL"
+    )
+  )) 
+```
+
+# Data Visualizations
+
+Exploring the shape of concepts available in both datasets to visualize and understand similarities and differences These comparisons appear in the supplemental section
+
+### Category Distributions across Langauge Sets
+
+Comparing distributions statistically
+
+```{r compare-english-distributions}
+
+# compare distributions with chisquare tests
+  
+#create distributions  
+  MBCDI_dist<-MBCDI_cat_distrib$data %>%
+      group_by(category) %>%
+      summarise(Category = length(category))
+
+  ASL_dist<-ASL_cat_distrib$data %>%
+      group_by(category) %>%
+      summarise(Category = length(category))
+
+  Overlapping_dist<-overlapping_cat_distrib$data %>%
+      group_by(category) %>%
+      summarise(Category = length(category))
+  
+  #compare distributions of American english vs. overlapping 
+ AE_Overlap_long= merge(MBCDI_dist, Overlapping_dist, by = "category") %>%
+   rename(MBCDI = Category.x, Overlap = Category.y) 
+   
+ 
+ AE_Overlap <- t(AE_Overlap_long[-1])
+ colnames(AE_Overlap) <- AE_Overlap_long[,1]
+ 
+ AE_Overlap_chisq<-chisq.test(AE_Overlap)
+ AE_Overlap_chisq
+```
+
+```{r compare-asl-distributions}
+#compare distributions of ASL vs. overlapping
+ASL_Overlap_long= merge(ASL_dist, Overlapping_dist, by = "category") %>%
+  rename(ASL = Category.x, Overlap = Category.y) 
+  
+
+ASL_Overlap <- t(ASL_Overlap_long[-1])
+colnames(ASL_Overlap) <- ASL_Overlap_long[,1]
+
+ASL_Overlap_chisq<-chisq.test(ASL_Overlap)
+ASL_Overlap_chisq
+```
+
+```{r asl-broad-model}
+#examining the how broad feature types predict AoA in ASL - while controlling for lexical frequency derived from (spoken) CHILDES input
+lm.fit_wl_4ASL <- lm(bglm_aoa_ASL ~ 
+                  scale(Num_Ency) + 
+                  scale(Num_Func) + 
+                  scale(Num_Percep) + 
+                  scale(Num_Tax) + 
+                  scale(`SignFrequency(Z)`), 
+                data=concs)
+summ(lm.fit_wl_4ASL)
+summ(lm.fit_wl_4ASL)
+tab_model(lm.fit_wl_4ASL)
+summary(lm.fit_wl_4ASL)
+
+```
+
+```{r english-broad-model}
+#What about for for English AoA? 
+## AoA predicted by broad feature types - examining whether we get same patterns as in Borovsky & Peters 2019 (sanity check) - perceptual features, should significantly, when controlling for CHILDES ln_freq -- 
+lm.fit_wl_4ENG <- lm(aoa ~ 
+                  scale(Num_Ency) + 
+                  scale(Num_Func) + 
+                  scale(Num_Percep) + 
+                  scale(Num_Tax) + 
+                  scale(CHILDES.ln_freq.pm), 
+                data=concs)
+tab_model(lm.fit_wl_4ENG
+          )
+
+```
+
+```{r broad-model-tables}
+tab_model(lm.fit_wl_4ENG, lm.fit_wl_4ASL)
+
+
+```
+
+```{r english-subtypes-model}
+#AoA for English controlling for frequency in spoken English
+
+lm.fit_wl <- lm(aoa ~  
+                  scale(Num_Smell) + 
+                  scale(Num_Sound)*iconicity_rating + 
+                  scale(Num_Tact) +
+                  scale(Num_Taste) + 
+                  scale(Num_Vis_Col) + 
+                  scale(Num_VisFandS) + 
+                  scale(Num_Vis_Mot) + 
+                  scale(CHILDES.ln_freq.pm), 
+                data=concs) 
+summ(lm.fit_wl)
+```
+
+```{r asl-subtypes-model}
+#Including all perceptual feature subtypes, and controlling for frequency in ASL
+
+lm.fit_wl1 <- lm(bglm_aoa_ASL ~  
+                  scale(Num_Smell) + 
+                  scale(Num_Sound) + 
+                  scale(Num_Tact) +
+                  scale(Num_Taste) + 
+                  scale(Num_Vis_Col) + 
+                  scale(Num_VisFandS) + 
+                  scale(Num_Vis_Mot) + 
+                  scale(`SignFrequency(Z)`) +
+                  scale(`Iconicity(Z)`) , 
+                data=concs) 
+summ(lm.fit_wl1)
+```
+
+```{r subtypes-model-tables}
+#seems that all visual feature subtypes and tactile features predict AoA when controlling for parent-report estimated sign frequency 
+
+#both models printed side-by-side for use in publication to facilitate direct comparison
+
+tab_model(lm.fit_wl, lm.fit_wl1)
+```
+
+```{r interaction-subtypes-model}
+#For the same subset of words, does Feature type interact with Language?  (Is AoA driven by different features in ASL vs Eng?)
+
+
+#now, we have multiple measures per concept - so can test in a lmer model controlling for random effects of concept to explore whether AoA in each language is influenced by different types of sensory features across languages.    scaling continuous variables,  controlling for frequency - using spoken estimates
+
+lm.fit_wl2 <- lmer(AoA ~ Num_Sound*Language + 
+                         Num_Tact*Language +
+                         Num_Vis_Col*Language + 
+                         Num_VisFandS*Language + 
+                         Num_Vis_Mot*Language + 
+                    + scale(CHILDES.ln_freq.pm) +
+                    (1|Concept), 
+                data=concs.long)
+
+
+summ(lm.fit_wl2)
+
+tactile_interaction_plot <- plot_model(
+  lm.fit_wl2,
+  type = "pred",
+  terms = c("Num_Tact", "Language"),  # Switch as needed
+  mdrt.values = "meansd",            # Use mean and ±1 SD as grouping levels
+  title = "B",
+  colors = c("#3A86FF", "#FF9F1C"),
+  axis.title = c("Number of Tactile Features", "Predicted AoA")
+) +
+  theme_minimal(base_size = 16) + # Increase base font size
+  theme(
+    plot.title = element_text(size = 18, face = "bold"), # Adjust title size
+    axis.title = element_text(size = 16),               # Adjust axis title size
+    axis.text = element_text(size = 14),                # Adjust axis text size
+    legend.title = element_text(size = 14),             # Adjust legend title size
+    legend.text = element_text(size = 12)               # Adjust legend text size
+  )
+tactile_interaction_plot
+
+vismot_interaction_plot <- plot_model(
+  lm.fit_wl2,
+  type = "pred",
+  terms = c("Num_Vis_Mot", "Language"),  # Switch as needed
+  mdrt.values = "meansd",            # Use mean and ±1 SD as grouping levels
+  title = "A",
+  colors = c("#3A86FF", "#FF9F1C"),
+  axis.title = c("Number of Visual-Motion Features", "Predicted AoA")
+) +
+  theme_minimal(base_size = 16) + # Increase base font size
+  theme(
+    plot.title = element_text(size = 18, face = "bold"), # Adjust title size
+    axis.title = element_text(size = 16),               # Adjust axis title size
+    axis.text = element_text(size = 14),                # Adjust axis text size
+    legend.title = element_text(size = 14),             # Adjust legend title size
+    legend.text = element_text(size = 12)               # Adjust legend text size
+  )
+vismot_interaction_plot
+
+sound_interaction_plot <- (plot_model(lm.fit_wl2, 
+           type = "int",                # Interaction plot
+           theme = theme_minimal(base_size = 14),
+           terms = c("Num_Sound", "Language"),  # Specify interaction terms
+           title = "C",
+           colors = c("#3A86FF", "#FF9F1C"), 
+           axis.title = c("Number of Sound Features", "Predicted AoA")))[[1]] +
+  theme_minimal(base_size = 16) + # Increase base font size
+  theme(
+    plot.title = element_text(size = 18, face = "bold"), # Adjust title size
+    axis.title = element_text(size = 16),               # Adjust axis title size
+    axis.text = element_text(size = 14),                # Adjust axis text size
+    legend.title = element_text(size = 14),             # Adjust legend title size
+    legend.text = element_text(size = 12)               # Adjust legend text size
+  )
+sound_interaction_plot
+
+taste_interaction_plot <- (plot_model(lm.fit_wl2, 
+           type = "int",                # Interaction plot
+           theme = theme_minimal(base_size = 14),
+           terms = c("Num_Taste", "Language"),  # Specify interaction terms
+           title = "C",
+           colors = c("#3A86FF", "#FF9F1C"), 
+           axis.title = c("Number of Taste Features", "Predicted AoA")))[[1]] +
+  theme_minimal(base_size = 16) + # Increase base font size
+  theme(
+    plot.title = element_text(size = 18, face = "bold"), # Adjust title size
+    axis.title = element_text(size = 16),               # Adjust axis title size
+    axis.text = element_text(size = 14),                # Adjust axis text size
+    legend.title = element_text(size = 14),             # Adjust legend title size
+    legend.text = element_text(size = 12)               # Adjust legend text size
+  )
+sound_interaction_plot
+
+three_interactions <- cowplot::plot_grid(vismot_interaction_plot,
+                   tactile_interaction_plot,
+                   sound_interaction_plot,
+                   ncol=1)
+ggsave("figures/three_interactions.jpeg",three_interactions, device = "jpeg", height=9, width=6)
+```
+
+
+```{r iconicity-corrs}
+lexical_props <- concs %>%
+  mutate(NumCharacters = nchar(Concept))%>% 
+  dplyr::rename(`Tactile Features` = Num_Tact,
+                `Visual (Motion) Features` = Num_Vis_Mot,
+                `Visual (Color) Features` = Num_Vis_Col,
+                `Visual (Form & Surface) Features` = Num_VisFandS,
+                `Sound Features` = Num_Sound,
+                `Taste Features` = Num_Taste,
+                `Smell Features` = Num_Smell,
+                `English Word Length` = NumCharacters,
+                `English Iconicity` = iconicity_rating,
+                `English Frequency (CHILDES)` = CHILDES.ln_freq.pm,
+                `ASL Frequency (rating)` = `SignFrequency(Z)`,
+                 `ASL Iconicity`= `Iconicity(Z)` 
+              )
+  
+  
+english_corrs <- cor(
+  lexical_props %>%
+    select(
+      `Visual (Motion) Features`:`Tactile Features`,
+      `English Frequency (CHILDES)`,
+      `English Word Length`,
+      `English Iconicity`
+    ),
+  use = "pairwise.complete.obs"
+) %>%
+  as.data.frame() %>%
+  select(
+      `Visual (Motion) Features`:`Tactile Features`) %>%
+  slice_tail(n = 3) %>%
+  as.matrix()
+
+english_ps <- cor.mtest(lexical_props %>%
+    select(
+      `Visual (Motion) Features`:`Tactile Features`,
+      `English Frequency (CHILDES)`,
+      `English Word Length`,
+      `English Iconicity`
+    ),
+  use = "pairwise.complete.obs", conf.level = 0.95)
+
+asl_corrs <- cor(
+  lexical_props %>%
+    select(
+      `Visual (Motion) Features`:`Tactile Features`,
+      `ASL Frequency (rating)`,
+      `Phonological Complexity`,
+      `ASL Iconicity`
+    ),
+  use = "pairwise.complete.obs"
+)%>%
+  as.data.frame() %>%
+  select(
+      `Visual (Motion) Features`:`Tactile Features`) %>%
+  slice_tail(n = 3) %>%
+  as.matrix()
+asl_ps <- cor.mtest(lexical_props %>%
+    select(
+      `Visual (Motion) Features`:`Tactile Features`,
+      `ASL Frequency (rating)`,
+      `Phonological Complexity`,
+      `ASL Iconicity`
+    ),
+  use = "pairwise.complete.obs", conf.level = 0.95)
+
+
+english_corrplot <- ggcorrplot(english_corrs,
+                           title = "English",
+           legend.title = "Correlation Strength",
+           lab = T,
+           # show.diag = F,
+           show.legend=F,
+           # p.mat = english_ps$p,
+           # insig = "blank",
+           ggtheme = theme_classic)
+english_corrplot
+asl_corrplot <- ggcorrplot(asl_corrs,
+                           title = "ASL",
+           legend.title = "Correlation Strength",
+           lab = T,
+           show.legend = FALSE,
+           # p.mat = asl_ps$p,
+           # insig = "blank",
+           ggtheme = theme_classic)
+cowplot::plot_grid(english_corrplot, asl_corrplot)
+
+
+all_corrs <- cor(
+  lexical_props %>%
+    select(
+      `Visual (Motion) Features`:`Tactile Features`,
+      `English Frequency (CHILDES)`,
+      `English Word Length`,
+      `English Iconicity`,
+      `ASL Frequency (rating)`,
+      `Phonological Complexity`,
+      `ASL Iconicity`
+    ),
+  use = "pairwise.complete.obs"
+)
+
+
+```
