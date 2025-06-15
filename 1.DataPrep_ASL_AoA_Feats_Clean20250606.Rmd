@@ -21,12 +21,12 @@ library(tidyverse)
 ```{r Load Datasets, message=FALSE}
 
 ##Load ASL AOA information
-ASL_aoa_df<-read_csv("../RawData/signdata_20231106_updated.csv")%>%
+ASL_aoa_df<-read_csv("data/signdata_20231106_updated.csv")%>%
   select("LemmaID", "SignBankLemmaID", "bglm_aoa", "empirical_aoa") %>%
   dplyr::rename(Sign = "SignBankLemmaID")
 
 #Loading English AOA 
-WS_aoa_df <- read_csv("../RawData/WS_production_aoa_data.csv") %>%
+WS_aoa_df <- read_csv("data/WS_production_aoa_data.csv") %>%
   dplyr::select(LemmaID, words_FeatsVersion, category,lexical_category,aoa, DF_aoa) 
   
 
@@ -40,7 +40,7 @@ prod_aoa_df[prod_aoa_df$Concept %in% c("mommy","daddy"),"aoa"] <-
   min(prod_aoa_df[!prod_aoa_df$Concept %in% c("mommy","daddy"),"aoa"])
 
 ## Load/prep concFeats file
-concsFeats <- read_csv("../RawData/MBCDI_concsFeats_2022-07-14.csv") %>%
+concsFeats <- read_csv("data/MBCDI_concsFeats_2022-07-14.csv") %>%
   subset(Concept %in% prod_aoa_df$Concept)
 
 # adding broad BR labels to concsFeats
@@ -49,28 +49,33 @@ concsFeats$BR_Label_broad <- sapply(concsFeats$BR_Label, function (x) ifelse(x %
 
 
 ## Load/prep concs file
-concs1 <- read_csv("../RawData/MBCDI_concs_2022-07-14.csv")  %>%
+concs_raw <- read_csv("data/MBCDI_concs_2022-07-14.csv")  %>%
   subset(Concept %in% prod_aoa_df$Concept)
 
 ##Load English frequency information
-childes.freqStats <- read_csv("../RawData/MBCDI_CHILDESv0.1.0_freq.csv")  %>%
+childes.freqStats <- read_csv("data/MBCDI_CHILDESv0.1.0_freq.csv")  %>%
   subset(Concept %in% prod_aoa_df$Concept)
 
 #Load ASL frequency information 
 
-ASL.freqStats <- read_csv("../RawData/signdata_20231106_updated.csv")%>%
+ASL.freqStats <- read_csv("data/signdata_20231106_updated.csv")%>%
   subset(InCDI=="Yes") %>%
   subset(SignBankLemmaID %in% prod_aoa_df$Sign) %>%
-  select("SignBankLemmaID", "SignFrequency(Z)") %>%
+  select("SignBankLemmaID", "SignFrequency(Z)", `Phonological Complexity`) %>%
   dplyr::rename(Sign = "SignBankLemmaID")
 
 
-concs <- left_join(concs1, prod_aoa_df, by="Concept") %>%
+concs <- left_join(concs_raw, prod_aoa_df, by="Concept") %>%
   left_join(childes.freqStats, by="Concept") %>%
   filter(!is.na(bglm_aoa_ASL)) %>%
   #left_join(CD_stats, by="Concept") %>%
   filter(!is.na(Sign)) %>%
-  left_join(ASL.freqStats, by="Sign")
+  left_join(ASL.freqStats, by="Sign") %>%
+  select(Concept, definition, Sign,
+         lexical_category, Length_Phonemes, `Phonological Complexity`,
+         CHILDES.ln_freq.pm, `SignFrequency(Z)`,
+         aoa, bglm_aoa_ASL, 
+         Num_Func:Num_Tax)
 
 
 #rm(perceptualBR,  childes.freqStats)
@@ -80,9 +85,8 @@ concs <- left_join(concs1, prod_aoa_df, by="Concept") %>%
 ### Saving Data for Analysis  
 ```{r}
 
-concs<-select(concs,-4:-25,-48)
 gdata::keep(columnClasses, concs, sure=TRUE)
-save.image(file="../Output/ASLLexFeats.Rdata") 
+save.image(file="data/ASLLexFeats.Rdata") 
 ```
   
 
