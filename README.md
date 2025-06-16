@@ -13,21 +13,25 @@ This script reads in the semantic features data, the ASL LEX sign lexical propor
 
 ## 2.ASLLexFeats_Stats.Rmd
 
+This script reads in data/ASLLexFeats.Rdata (same as concs.csv) and runs the models in the paper. This also generates the interaction plots (figures/three_interactions.jpeg).
+
 ## 3.FeaturePlots.R
+
+This script reads in data/ASLLexFeats.Rdata and figures/ASLFeats_Frog.png and creates the polar plot and bar plots for the feature plot graph. 
 
 ## data/
 
 This folder contains the following data files:
 
-- ASLLexFeats.Rdata
-- CDIwords_featurecounts.csv
-- CDIwords_featurelevel.csv
-- concs.csv
+- ASLLexFeats.Rdata: this data is generated in 1.DataPrep_ASL_AoA_Feats_Clean20250606.Rmd. The file contains word-level data for the CDI words with # of perceptual features, frequency info, and AoA. It has the same content as concs.csv.
+- CDIwords_featurecounts.csv: This contains word-level counts of the semantic features by type. It gets read into 1.DataPrep_ASL_AoA_Feats_Clean20250606.Rmd where we add AoA info and the other lexical properties.
+- CDIwords_featurelevel.csv: This file contains *feature*-level data for the CDI words.
+- concs.csv: this data is generated in 1.DataPrep_ASL_AoA_Feats_Clean20250606.Rmd. It has the same content as ASLLexFeats.Rdata.
 - English_iconicity_ratings_cleaned.csv: this data came from Bodo Winter's 2024 English iconicity ratings study. It was downloaded from OSF (https://osf.io/ex37k).
-- MBCDI_CHILDESv0.1.0_freq.csv
-- signdata_20231106_updated.csv
-- signdata.csv
-- WS_production_aoa_data.csv
+- MBCDI_CHILDESv0.1.0_freq.csv: This file contains CHILDES frequency counts for the CDI words.
+- signdata_20231106_updated.csv: EC TO DO: check how/why this file is different from signdata.csv
+- signdata.csv: This file was downloaded from ASL LEX 2.0 (https://asl-lex.org/download.html)
+- WS_production_aoa_data.csv: This file contains AoA from Wordbank's American English dataset. 
 
 
 ## figures/
